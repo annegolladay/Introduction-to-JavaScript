@@ -13,12 +13,17 @@ Task 1a - Voting Age
 
 Do the following:   
    1. Create a variable called votingAge and assign it a value
+
    2. Console log true if age is 18 or higher
 
    HINT: no function required
 */
 
+let name = 'votingAge' ;
 
+if (age = '18 or higher') {
+  console.log('true') ;
+}
 
 /*
 Task 1b - Values
@@ -31,6 +36,18 @@ Do the following:
    HINT: no function required
 */
 
+let firstname = 'Annie' ;
+let jobname = 'web developer' ;
+
+if (firstname = 'Annie') {
+  console.log('That is my correct name!') ;
+}
+else if(firstname === 'Anne the developer') {
+  console.log('That is my given name.') ;
+}
+else{
+  console.log(I'm not sure what name you want to go by.') ;
+}
 
 
 
