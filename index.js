@@ -19,10 +19,10 @@ Do the following:
    HINT: no function required
 */
 
-let name = 'votingAge' ;
+var votingAge = 18;
 
-if (age = '18 or higher') {
-  console.log('true') ;
+if (votingAge > 18) {
+  console.log('true');
 }
 
 /*
@@ -36,17 +36,15 @@ Do the following:
    HINT: no function required
 */
 
-let firstname = 'Annie' ;
-let jobname = 'web developer' ;
+let firstName = 'Annie';
+let jobName = 'web developer';
 
-if (firstname = 'Annie') {
-  console.log('That is my correct name!') ;
-}
-else if(firstname === 'Anne the developer') {
-  console.log('That is my given name.') ;
-}
-else{
-  console.log(I'm not sure what name you want to go by.') ;
+if (firstName = 'Annie') {
+  console.log('That is my correct name!');
+} else if (firstName === 'Anne the developer') {
+  console.log('That is my given name.');
+} else {
+  console.log("I'm not sure what name you want to go by.");
 }
 
 
@@ -62,6 +60,12 @@ Do the following:
 
    HINT: look up the Number method
 */
+// 'num is the new variable i am creating
+let str = '1999';
+let num = Number('1999');
+console.log(num);
+
+
 
 
 
@@ -76,8 +80,8 @@ Do the following:
 */
 
 function multiply(a, b){
-    return a * b;
-  }
+  return a * b;
+}
 
 console.log(multiply(1,3));
 
@@ -91,10 +95,10 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(age){
+    return age * 7;
 }
-
+console.log(dogYears(1)) //7
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -124,10 +128,30 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
+
+
+function hungryDog(weight, age){
+    if (age >= 0.2 && age < 0.4) {
+      return weight * 0.1;
+    } else if (age >= 0.4 && age < 0.7) {
+      return weight * 0.05;
+    } else if (age >= 0.7 && age < 1) {
+      return weight * 0.04;
+    } else {
+      if (weight <= 5) {
+        return weight * 0.05;
+      } else if (weight >= 6 && weight <= 10) {
+        return weight * 0.04;
+      } else if (weight >= 11 && weight <= 15) {
+        return weight * 0.03;
+      } else if (weight > 15) {
+        return weight * 0.02;
+      }
+    }
   }
 
+let foodAmount = hungryDog(15, 2)
+console.log("dog food amount: ", foodAmount)
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
