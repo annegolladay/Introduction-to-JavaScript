@@ -58,7 +58,9 @@ Do the following:
    HINT: look up the Number method
 */
 
-
+let str = '1999';
+let num = Number('1999');
+console.log(num);
 
 
 /*
@@ -87,9 +89,10 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(age) {
+    return age * 7;
 }
+console.log(dogYears(1));
 
 
 
@@ -252,11 +255,19 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
+function vowelCounter(word) {
+    let vowel = ['a', 'e', 'i', 'o', 'u'];
+    let counter = 0;
+    word = word.toLowerCase();
+    console.log(word);
+    for(let i=0; i <= word.length; i++) {
+      if(vowel.includes(word[i]));
+      counter++;
+    }
+    return counter;
 }
 
-
+console.log(vowelCounter('COUNT'));
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
 function foo(){
