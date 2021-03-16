@@ -123,10 +123,32 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
-  }
+// function hungryDog(/*add your code here*/){
+//     /*add your code here*/
+//   }
 
+function hungryDog(weight, age){
+  if (age >= 0.2 && age < 0.4) {
+    return weight * 0.1;
+  } else if (age >= 0.4 && age < 0.7) {
+    return weight * 0.05;
+  } else if (age >= 0.7 && age < 1) {
+    return weight * 0.04;
+  } else {
+    if (weight <= 5) {
+      return weight * 0.05;
+    } else if (weight >= 6 && weight <= 10) {
+      return weight * 0.04;
+    } else if (weight >= 11 && weight <= 15) {
+      return weight * 0.03;
+    } else if (weight > 15) {
+      return weight * 0.02;
+    }
+  }
+}
+
+let foodAmount = hungryDog(15, 2)
+console.log("dog food amount: ", foodAmount)
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
