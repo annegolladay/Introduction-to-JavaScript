@@ -17,6 +17,10 @@ Do the following:
 
    HINT: no function required
 */
+// let votingAge = 20;
+// return age > 18;
+
+// console.log(votingAge > 18 = true);
 
 
 
@@ -58,9 +62,11 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(a, b){
+    return a * b;
   }
+  
+  console.log(multiply(2, 2));
 
 
 
