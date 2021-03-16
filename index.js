@@ -17,11 +17,12 @@ Do the following:
 
    HINT: no function required
 */
-// let votingAge = 20;
-// return age > 18;
-
-// console.log(votingAge > 18 = true);
-
+let votingAge = 20;
+if(votingAge >= 18) {
+  console.log('true'); 
+} else {
+  console.log('false');
+}
 
 
 /*
@@ -34,8 +35,15 @@ Do the following:
 
    HINT: no function required
 */
+let pet = 'Daisy';
+let training = 'good';
+if(training === 'good') {
+  pet = 'Daisy';
+} else if (training === 'bad') {
+  pet = 'Luna';
+}
 
-
+console.log(pet);
 
 
 
@@ -67,7 +75,6 @@ function multiply(a, b){
   }
   
   console.log(multiply(2, 2));
-
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
