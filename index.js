@@ -42,9 +42,17 @@ if(training === 'good') {
 } else if (training === 'bad') {
   pet = 'Luna';
 }
-
 console.log(pet);
 
+
+let name = 'Annie';
+let nickname = 'Bananie';
+if(nickname === 'Bananie') {
+  name = 'Annie';
+} else if(nickname === 'Kenny') {
+  name = 'Kenneth';
+}
+console.log(name);
 
 
 /*
